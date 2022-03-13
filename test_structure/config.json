@@ -1,0 +1,16 @@
+{
+    "address":"localhost",
+    "username":"ubuntu",
+    "password":"ubuntu",
+    "results":{
+       "save_as":"text",
+       "path":""
+    },
+    "commands":[
+       {"command" : "cat /etc/hostname", "expects" : true},
+       {"command" : "cat /etc/config/network", "expects" : true},
+       {"command" : "ls -l /", "expects" : true},
+       {"command" : "ls -l /example", "expects" : false},
+       {"command" : "touch /tmp/example", "expects" : true}
+    ]
+ }

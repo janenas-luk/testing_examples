@@ -1,0 +1,6 @@
+Command; Expects; Status
+cat /etc/hostname; True; Passed
+cat /etc/config/network; True; Failed
+ls -l /; True; Passed
+ls -l /example; False; Passed
+touch /tmp/example; True; Passed
